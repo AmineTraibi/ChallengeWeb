@@ -1,9 +1,16 @@
 package com.ensa.entities;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
+
+
 
 @Entity
 @Table(name="user")
@@ -53,5 +60,15 @@ public class User {
 		this.password = password;
 	}
 
+	@OneToMany(mappedBy="pk.user")
+	private List<User_Shop>cnt;
+	
+	public List<User_Shop> getCnt() {
+		return cnt;
+	}
+	public void setCnt(List<User_Shop> cnt) {
+		this.cnt = cnt;
+	}
+	
 	
 }
