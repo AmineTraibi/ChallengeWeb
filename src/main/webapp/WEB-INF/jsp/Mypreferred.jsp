@@ -5,7 +5,7 @@
 <%@page import="java.util.List"%>
 <html>
 <head>
-<title>Challenge|Shop</title>
+<title>Challenge|Mypreferred</title>
 <link href="/resources/css/bootstrap.css" rel='stylesheet' type='text/css' />
 <link href="/resources/css/style.css" rel='stylesheet' type='text/css' />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -53,8 +53,10 @@
 		 </div>
 	    </div>
 	  </div>
-	<a href="mypreferred" style="float:right;"><h3>My preferred</h3></a>   
 	  <div class="main">
+	  <div class="button1">
+        <a href="back"><input type="submit" name="Submit" value="Back to all shop"></a>
+	  </div>
 		<div class="container">
 		<div class="row">
        <c:forEach var="l" items="${lshop}"> 
@@ -62,10 +64,9 @@
 				<div class="col-item" >
 					<img src="/resources/images/shop_img.jpg"  class="img-responsive" alt=""/>
 					<div class="shop_desc">
-						<h3><a href="#">${l.nom_shop}</a></h3>
+						<h3><a href="#">${l.pk.shop.nom_shop}</a></h3>
 						<ul class="buttons">
-							<li class="dislike"><a href="#">Dislike</a></li>
-							<li class="like"><a href="Add_to_mypreferred?idp=${l.idshop}">Like</a></li>
+							<li class="dislike"><a href="deletefavorite?id=${l.pk.shop.idshop}">Delete</a></li>
 							<div class="clearfix"></div>
 					    </ul>
 				    </div>
