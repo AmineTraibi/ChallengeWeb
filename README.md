@@ -16,7 +16,7 @@ The project is created with Maven, so you just need to import it to your IDE(Ecl
 
 ### Database configuration
 
-Create a MySQL database with the name webchallenge add the credentials to /resources/application.properties.
+Create a MySQL database with the name webchallenge (or import webchallenge file sql which contains the shops) add the credentials to /resources/application.properties.
 The default ones are :
 
 ```
