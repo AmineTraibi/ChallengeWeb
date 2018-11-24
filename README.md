@@ -25,3 +25,8 @@ spring.datasource.url=jdbc:mysql://localhost:3306/webchallenge
 spring.datasource.username=root
 spring.datasource.password=
 ```
+### Interfaces
+![interface to authenticate or register](https://github.com/AmineTraibi/ChallengeWeb/blob/master/index.png)
+![interface to register](https://github.com/AmineTraibi/ChallengeWeb/blob/master/register.png)
+![interface that introduces the shop](https://github.com/AmineTraibi/ChallengeWeb/blob/master/Interface.png)
+![interface that introduces the preferred shop](https://github.com/AmineTraibi/ChallengeWeb/blob/master/mypreferred.png)
